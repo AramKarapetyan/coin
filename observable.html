@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sn light-blue-skin">
+    <div class="flex-structure">
+        <aside class="nav-side sidebar">
+            <div class="blue-block">
+                <div class="logo-block">
+                    <h1>Logo</h1>
+                </div>
+                <div id="leftside-navigation" class="nano">
+                    <ul class="nano-content">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">dashboard</i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>                        
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="material-icons">work</i>
+                                <span>Investment</span>
+                            </a>
+                        </li>                       
+                        <li class="sub-menu">
+                            <a href="market.html">
+                                <i class="material-icons">attach_money</i>
+                                <span>Market</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu active">
+                            <a href="observable.html" class="parent-menu">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>Observable</span>
+                            </a> 
+                        </li>                      
+                        <li class="sub-menu">
+                            <a href="ico-list.html" class="parent-menu">
+                                <i class="material-icons">autorenew</i>
+                                <span>ICO</span>
+                            </a>                          
+                            <ul>
+                                <li class="">
+                                    <a href="ico-list.html">ICO list</a>
+                                </li>
+                                <li>
+                                    <a href="my-ico.html">My ICO</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <!--Main Navigation-->
+            <header>
+                <nav class="navbar fixed-top d-flex space-between custom navbar-expand-lg navbar-dark scrolling-navbar">
+                    <a class="navbar-brand" href="#"><strong>Observable</strong></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light d-flex ai-center" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">                               
+                                <div class="img-block">
+                                    <img src="img/aram.jpg" alt="Hello Vardan">
+                                </div>
+                                <p class="user-name">Vardan</p> 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-cyan z-depth-1-half" aria-labelledby="navbarDropdownMenuLink-4">
+                                <a class="dropdown-item d-flex ai-center waves-effect waves-light" href="#">
+                                    <i class="material-icons">power_settings_new</i>
+                                    Log out
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Main Navigation-->
+            <section class="main-content">
+                <div class="jumbotron">
+<!--
+                    <h2 class="h2-responsive"><strong>Observable currencies</strong></h2>
+                    <p class="pb-4">The currencies which observable for the investment</p>
+-->
+                    <table class="table table-hover observable dark-header">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Ticker</th>
+                                <th>Last price</th>
+                                <th>Change %</th>
+                                <th>Mark price</th>
+                                <th>24 high</th>
+                                <th>24 low</th>
+                                <th>24 volume</th>
+                                <th>Market cap</th>
+                                <th>ICO price</th>
+                                <th class="action"> 
+                                    <a href="#"  data-toggle="modal" data-target="#addCell" data-toggle="tooltip" title="Add table cell">
+                                        <i class="material-icons" >add</i>
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td title="Bitcoin">
+                                  <span>                              
+                                      <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                  </span> 
+                                  Bitcoin
+                                </td>
+                                <td class="ticker">btc</td>
+                                <td class="last-price">$ 14.500</td>
+                                <td class="red-text change-price">
+                                  -150% 
+                                  <span class="badge red">
+                                    <i class="material-icons">arrow_downward</i>
+                                  </span>
+                                </td>
+                                <td>$ 13.648</td>
+                                <td>$ 15.700</td>
+                                <td>$ 13.980</td>
+                                <td>$ 16.76M</td>
+                                <td>$ 579.14M</td>
+                                <td>$ 0.02</td>
+                                <td class="action">
+                                    <i class="material-icons">clear</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td title="Bitcoin">
+                                  <span>                              
+                                      <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                  </span> 
+                                  Bitcoin
+                                </td>
+                                <td class="ticker">btc</td>
+                                <td class="last-price">$ 14.500</td>
+                                <td class="red-text change-price">
+                                  -12% 
+                                  <span class="badge red">
+                                    <i class="material-icons">arrow_downward</i>
+                                  </span>
+                                </td>
+                                <td>$ 13.648</td>
+                                <td>$ 15.700</td>
+                                <td>$ 13.980</td>
+                                <td>$ 16.76M</td>
+                                <td>$ 579.14M</td>
+                                <td>$ 0.02</td>
+                                <td class="action">
+                                    <i class="material-icons">clear</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td title="Bitcoin">
+                                  <span>                              
+                                      <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                  </span> 
+                                  Bitcoin
+                                </td>
+                                <td class="ticker">btc</td>
+                                <td class="last-price">$ 14.500</td>                                
+                                <td class="green-text change-price">
+                                  +24% 
+                                  <span class="badge green">
+                                    <i class="material-icons">arrow_upward</i>
+                                  </span>
+                                </td>
+                                <td>$ 13.648</td>
+                                <td>$ 15.700</td>
+                                <td>$ 13.980</td>
+                                <td>$ 16.76M</td>
+                                <td>$ 579.14M</td>
+                                <td>$ 0.02</td>
+                                <td class="action">
+                                    <i class="material-icons">clear</i>
+                                </td>
+                            </tr>
+                            <!-- add currency-->
+                            <tr>
+                              <td>3</td>
+                              <td colspan="10">
+                                  <input placeholder="Enter cryptocurrency" type="text" id="form5" class="form-control">
+                              </td> 
+                              <td class="action">
+                                <i class="material-icons">done</i>
+                                <i class="material-icons">clear</i>
+                              </td>  
+                            </tr>   
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary">Add currency</button>
+                 </div>
+            </section>            
+            <div class="modal fade" id="addCell" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog flex-center modal-lg modal-notify modal-info home-page" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header d-flex space-between ai-center">
+                            <p class="heading lead">Add table column</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <a aria-hidden="true" href=""> 
+                                    <i class="material-icons white-text">clear</i>
+                                </a>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body form-custom">  
+                          <form action="">                              
+                               <div class="row">
+                                   <div class="col">  
+                                        <div class="md-form">
+                                            <input type="text" id="form1" class="form-control">
+                                            <label for="form1" class="">Title</label>
+                                        </div> 
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col">
+                                       <h5>Type</h5>                           
+                                       <div>
+                                         <div class="md-radio md-radio-inline">
+                                           <input id="1" type="radio" name="g" checked>
+                                           <label for="1">Text</label>
+                                         </div>
+                                         <div class="md-radio md-radio-inline">
+                                           <input id="2" type="radio" name="g">
+                                           <label for="2">Number</label>
+                                         </div>
+                                         <div class="md-radio md-radio-inline">
+                                           <input id="3" type="radio" name="g">
+                                           <label for="3">Persent (%)</label>
+                                         </div>
+                                         <div class="md-radio md-radio-inline">
+                                           <input id="4" type="radio" name="g">
+                                           <label for="4">Curency ($)</label>
+                                         </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col">
+                                      <h5>Width</h5>                           
+                                      <div>
+                                        <div class="md-radio md-radio-inline">
+                                          <input id="5" type="radio" name="a" checked>
+                                          <label for="5">Auto</label>
+                                        </div>
+                                        <div class="md-radio md-radio-inline">
+                                          <input id="6" type="radio" name="a">
+                                          <label for="6">Small width</label>
+                                        </div>
+                                        <div class="md-radio md-radio-inline">
+                                          <input id="7" type="radio" name="a">
+                                          <label for="7">Medium width</label>
+                                        </div>
+                                        <div class="md-radio md-radio-inline">
+                                          <input id="8" type="radio" name="a">
+                                          <label for="8">Large width</label>
+                                        </div>
+                                      </div>  
+                                   </div>
+                               </div>  
+                          </form>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">                        
+                            <button type="button" class="btn btn-primary">add cell</button>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script>
+        $("#leftside-navigation .sub-menu > a").click(function(e) {
+            $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+                e.stopPropagation()
+        })
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

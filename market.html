@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/component.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sn light-blue-skin">
+    <div class="flex-structure">
+        <aside class="nav-side sidebar">
+            <div class="blue-block">
+                <div class="logo-block">
+                    <h1>Logo</h1>
+                </div>
+                <div id="leftside-navigation" class="nano">
+                    <ul class="nano-content">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">dashboard</i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>                        
+                        <li class="sub-menu">
+                            <a href="javascript:void(0);">
+                                <i class="material-icons">work</i>
+                                <span>Investment</span>
+                            </a>
+                        </li>
+                                            
+                        <li class="sub-menu active">
+                            <a href="market.html" class="parent-menu">
+                                <i class="material-icons">attach_money</i>
+                                <span>Market</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="observable.html" class="parent-menu">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>Observable</span>
+                            </a> 
+                        </li>                      
+                        <li class="sub-menu">
+                            <a href="ico-list.html" class="parent-menu">
+                                <i class="material-icons">autorenew</i>
+                                <span>ICO</span>
+                            </a>                          
+                            <ul>
+                                <li class="">
+                                    <a href="ico-list.html">ICO list</a>
+                                </li>
+                                <li>
+                                    <a href="my-ico.html">My ICO</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="market">
+            <!--Main Navigation-->
+            <header>
+                <nav class="navbar fixed-top d-flex space-between custom navbar-expand-lg navbar-dark scrolling-navbar">
+                    <a class="navbar-brand" href="#"><strong>Market</strong></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light d-flex ai-center" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">                               
+                                <div class="img-block">
+                                    <img src="img/aram.jpg" alt="Hello Vardan">
+                                </div>
+                                <p class="user-name">Vardan</p> 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-cyan z-depth-1-half" aria-labelledby="navbarDropdownMenuLink-4">
+                                <a class="dropdown-item d-flex ai-center waves-effect waves-light" href="#">
+                                    <i class="material-icons">power_settings_new</i>
+                                    Log out
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Main Navigation-->
+            <section class="main-content market">                
+                <section class="market-info-bar">   
+                   <div class="widgets d-flex ai-center">  
+                        <div class="info-item">
+                            <h5 class="title">Crypto market cap</h5>
+                            <p class="count">$ 682.62B</p>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="title">24h Volume</h5>
+                            <p class="count">$ 50.579B</p>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="title">Bitcoin volume</h5>
+                            <p class="count">$ 6.45B</p>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="title">Altcoin volume</h5>
+                            <p class="count">$ 22.24B</p>
+                        </div>
+                   </div>                      
+                    <div class="md-form currency-search">
+                        <input type="text" class="input-alternate" placeholder="Search Cryptocurrency">
+                        <i class="material-icons">search</i>
+                    </div>                   
+                </section>
+                <section class="marcet-table">                    
+                    <div class="jumbotron">
+                       <div class="d-flex jc-space-between">
+                         <div class="left-part d-flex">  
+                          <div class="dropdown toggle-columns">
+                            <button class="btn btn-light-grey dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Toggle columns
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                               <div class="item-box"> 
+                                  <ul>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">Ticker</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">Price</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">Change %</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">24h high</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">24h low</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">24h volume</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">Market cap</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>                      
+                                          <div class="d-flex ai-center toggle-columns-row">
+                                              <a href="#" class="move-item">     
+                                                  <i class="material-icons">more_vert</i>
+                                              </a>
+                                              <div class="rkmd-checkbox checkbox-ripple d-flex ai-center">
+                                                <label class="input-checkbox checkbox-lightBlue">
+                                                  <input type="checkbox" id="checkbox-1" checked="">
+                                                  <span class="checkbox"></span>
+                                                </label>
+                                                <label for="checkbox-1" class="label">Price graph (7d)</label>
+                                              </div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                               </div>
+                               <div class="dropdown-divider"></div>
+                               <button type="button" class="btn btn-primary btn-sm">Save</button>
+                            </div>
+                          </div>
+                          <div class="dropdown select-currensy">
+                            <button class="btn btn-light-grey dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <a class="dropdown-item" href="#">USD</a>
+                                <a class="dropdown-item" href="#">BTC</a>
+                                <a class="dropdown-item" href="#">ETH</a>
+                            </div>
+                          </div>
+                         </div>
+                         <div class="right-part d-flex ai-center">
+                           <div class="dropdown">
+                            <button class="btn btn-light-grey dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                100
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <a class="dropdown-item" href="#">10</a>
+                                <a class="dropdown-item" href="#">50</a>
+                                <a class="dropdown-item" href="#">100</a>
+                                <a class="dropdown-item" href="#">200</a>
+                                <a class="dropdown-item" href="#">All</a>
+                            </div>
+                           </div>
+                              <a href="#" class="waves-effect next-previu">
+                                 <i class="material-icons">chevron_left</i>
+                              </a>
+                              <a href="#" class="waves-effect next-previu">
+                               <i class="material-icons">chevron_right</i>
+                             </a>                           
+                         </div> 
+                       </div>
+                       <div class="clear"></div>
+                        <table class="table table-hover observable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Ticker</th>
+                                    <th>Price</th>
+                                    <th>Change %</th>
+                                    <th>24 high</th>
+                                    <th>24 low</th>
+                                    <th>24 volume</th>
+                                    <th>Market cap</th>
+                                    <th>Price Graph (7d)</th> 
+                                    <th class="action"> 
+                                        <a href="#"  data-toggle="modal" data-target="#addCell" data-toggle="tooltip" title="Add table cell">
+                                            <i class="material-icons" >add</i>
+                                        </a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="red-text change-price">
+                                      -150% 
+                                      <span class="badge red">
+                                        <i class="material-icons">arrow_downward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td title="Bitcoin">
+                                      <span>                              
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </span> 
+                                      Bitcoin
+                                    </td>
+                                    <td class="ticker">btc</td>
+                                    <td class="last-price">$ 14.500</td>
+                                    <td class="green-text change-price">
+                                      -150% 
+                                      <span class="badge green">
+                                        <i class="material-icons">arrow_upward</i>
+                                      </span>
+                                    </td>
+                                    <td>$ 15.700</td>
+                                    <td>$ 13.980</td>
+                                    <td>$ 16.76M</td>
+                                    <td>$ 579.14M</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </div>
+                </section>
+            </section> 
+        </main>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script>
+        $("#leftside-navigation .sub-menu > a").click(function(e) {
+            $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+                e.stopPropagation()
+        })
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

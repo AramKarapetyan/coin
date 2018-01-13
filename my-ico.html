@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sn light-blue-skin">
+    <div class="flex-structure">
+        <aside class="nav-side sidebar">
+            <div class="blue-block">
+                <div class="logo-block">
+                    <h1>Logo</h1>
+                </div>
+                <div id="leftside-navigation" class="nano">
+                    <ul class="nano-content">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">dashboard</i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>                        
+                        <li class="sub-menu">
+                            <a href="javascript:void(0);">
+                                <i class="material-icons">work</i>
+                                <span>Investment</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="observable.html" class="parent-menu">
+                                <i class="material-icons">remove_red_eye</i>
+                                <span>Observable</span>
+                            </a> 
+                        </li>                       
+                        <li class="sub-menu active">
+                            <a href="ico-list.html" class="parent-menu">
+                                <i class="material-icons">autorenew</i>
+                                <span>ICO</span>
+                            </a>                          
+                            <ul>
+                                <li>
+                                    <a href="ico-list.html">ICO list</a>
+                                </li>
+                                <li class="child-active-menu">
+                                    <a href="#">My ICO</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <!--Main Navigation-->
+            <header>
+                <nav class="navbar fixed-top custom navbar-expand-lg navbar-dark scrolling-navbar">
+                    <a class="navbar-brand" href="#"><strong>Crypto</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </header>
+            <!--Main Navigation-->
+            <section class="main-content">
+                <div class="jumbotron">
+                    <h2 class="h2-responsive"><strong>ICO projects</strong></h2>
+                    <p class="pb-4">The currencies which observable for the investment</p>
+                    <table class="table table-hover ico">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Rate</th>
+                                <th>Goal</th>
+                                <th>ICO date</th>
+                                <th>Price in ICO</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td title="Bitcoin">
+                                  <div class="main-cell">
+                                      <div class="crypto-logo">
+                                          <img src="img/Bitcoin.png" alt="bitcoin" class="coin-logo">
+                                      </div>
+                                      <div class="main-info">
+                                          <h3>Zilliqa<span class="freez-bold">(ZIL)</span></h3>
+                                          <p class="description" title="Zilliqa is a new blockchain platform that is designed to scale in an open, permission-less distributed network securely. The core feature that makes Zilliqa scalable is sharding?—?dividing the network into several smaller component networks (called shards) capable of processing transactions in parallel.">Zilliqa is a new blockchain platform that is designed to scale in an open, permission-less distributed network securely. The core feature that makes Zilliqa scalable is sharding?—?dividing the network into several smaller component networks (called shards) capable of processing transactions in parallel.</p>
+                                      </div>
+                                  </div> 
+                                </td>
+                                <td>Blockchain</td>
+                                <td>Very high</td>
+                                <td>$ 21,000,000</td>
+                                <td>27-31 DEC 2017</td>
+                                <td>$0.01</td>
+                                <td>
+                                    <i class="material-icons">create</i>
+                                    <i class="material-icons">delete</i>
+                                </td>
+                            </tr>
+                            <!-- add currency-->
+                            <tr>
+                              <td>2</td>
+                              <td colspan="6">
+                                  <input placeholder="Enter cryptocurrency" type="text" id="form5" class="form-control">
+                              </td> 
+                              <td>
+                                <i class="material-icons">done</i>
+                                <i class="material-icons">clear</i>
+                              </td>  
+                            </tr>   
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary">Add ICO</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script>
+        $("#leftside-navigation .sub-menu > a").click(function(e) {
+            $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+                e.stopPropagation()
+        })
+    </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
